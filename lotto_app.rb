@@ -1,16 +1,26 @@
 require "sinatra"
-require_relative "lottonum.rb"
+require_relative "lotto_number.rb"
 
 get '/' do
-	erb :home
+	erb :lotto_home
 end
 
 post '/number' do
-	number = params[:number]
-    redirect '/number?result=' + result
+	num1 = params[:num1]
+	num2 = params[:num2]
+	num3 = params[:num3]
+	num4 = params[:num4]
+	num5 = params[:num5]
+	num6 = params[:num6]
+    redirect '/result?num1=' + num1
 end
 
 get '/result' do
-	number = params[:number]
-	erb :lotto_result :locals => {:number => number}
+	num1 = params[:num1]
+	num2 = params[:num2]
+	num3 = params[:num3]
+	num4 = params[:num4]
+	num5 = params[:num5]
+	num6 = params[:num6]
+	erb :lotto_result, :locals => {:number => number}
 end
