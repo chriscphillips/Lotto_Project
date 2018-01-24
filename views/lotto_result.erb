@@ -1,0 +1,33 @@
+<center>
+<script src= "/js/getdate.js"> 
+</script>
+<p id="date"> </p>
+<head>
+<title>Lotto Game</title>
+<link href="<%= url('/css/main.css') %>" rel= "stylesheet" type="text/css" />
+</head>
+<body>
+<img  alt="register1" src="/img/register1.jfif"  align="left" width="225" height="225">
+<img  alt="register2" src="/img/register2.jfif"  align="right" width="225" height="225">
+<%
+   
+%>
+    Thank for Playing.<br>   
+    Your Winning are:<br>
+<form method="post" action="number">
+<input type="integer"  name="amount">
+<input type="submit"><br><br>
+</form>
+<button onclick="goBack()"><h3>Click Here to Change Order</button></h3>
+<a href='//localhost:4567'>Go!</a>
+</center>
+</body>
+<br><br><br>
+<script>
+window.onload=getOrderDate('date');
+</script>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>

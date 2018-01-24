@@ -1,0 +1,21 @@
+<center>
+<script src= "/js/getdate.js"> 
+</script>
+<p id="date"> </p>
+<head>
+<title> Welcome to Chris's Lotto</title>
+<link href="<%= url('/css/main.css') %>" rel= "stylesheet" type="text/css" />
+</head>
+<body>
+Welcome to Lotto
+<br><br>
+Select Lotto Numbers
+<form method="post" action="number">
+<a href='//localhost:4567/enternumber'>Go!</a>
+</form>
+<br><br><br><br><br><br>
+</center>
+</body>
+<script>
+	window.onload=getOrderDate('date');
+</script>
