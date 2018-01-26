@@ -6,9 +6,12 @@
 		$winning_numbers = $number_array.sample(6).sort
 		$winning_numbers
 	end
+  
+	
 
 
-lotto()
-winning_numbers()
+
+
+
 	 
 

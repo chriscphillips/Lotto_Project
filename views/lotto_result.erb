@@ -10,7 +10,7 @@
 <img  alt="lottocard" src="/img/ticket.jfif"  align="left" width="225" height="224">
 <img  alt="lottocard" src="/img/ticket.jfif"  align="right" width="225" height="224">
     Thank for Playing.<br>   
-    Your Winning Numbers are:<br>
+    The Winning Numbers are:<br>   
  <html>
 <head>
 <title> Lotto Result </title>
@@ -18,8 +18,20 @@
 <body>
 <%
 lotto()
+num1 = num1.to_i
+num2 = num2.to_i
+num3 = num3.to_i
+num4 = num4.to_i 
+num5 = num5.to_i
+num6 = num6.to_i
+player_numbers = [num1, num2, num3, num4, num5, num6]
+matches = player_numbers & winning_numbers
+num_match = matches.length
 %>
-<%= winning_numbers() %><br>
+<%= winning_numbers() %><br><br>
+Your numbers are:<br>
+<%= player_numbers %><br>
+You won <%= num_match %> numbers<br>
 <table align = "center" border= "3"bordercolor= "black" width= "600" cellpadding= "7">
 <caption><h3> Lotto Winning </h3></caption>
 <tr>

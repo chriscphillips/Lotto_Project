@@ -12,7 +12,7 @@ post '/number' do
 	num4 = params[:num4]
 	num5 = params[:num5]
 	num6 = params[:num6]
-    redirect '/result?num1=' + num1 + '&num2' + num2 + '&num3' + num3 + '&num4' + num4 + '&num5' + num5 + '&num6' + num6
+    redirect '/result?num1=' + num1 + '&num2=' + num2 + '&num3=' + num3 + '&num4=' + num4 + '&num5=' + num5 + '&num6=' + num6
 end
 
 get '/result' do
